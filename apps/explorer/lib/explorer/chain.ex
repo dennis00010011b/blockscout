@@ -7,6 +7,7 @@ defmodule Explorer.Chain do
     only: [
       from: 2,
       join: 4,
+      join: 5,
       limit: 2,
       order_by: 2,
       order_by: 3,
@@ -196,10 +197,6 @@ defmodule Explorer.Chain do
     necessity_by_association = Keyword.get(options, :necessity_by_association, %{})
     paging_options = Keyword.get(options, :paging_options, @default_paging_options)
 
-    {:ok, address_bytes} = Explorer.Chain.Hash.Address.dump(address_hash)
-
-    token_transfers_dynamic = TokenTransfer.dynamic_any_address_fields_match(direction, address_bytes)
-
     base_query =
       paging_options
       |> fetch_transactions()
@@ -208,7 +205,12 @@ defmodule Explorer.Chain do
 
     token_transfers_query =
       base_query
-      |> from(where: ^token_transfers_dynamic)
+      |> join(
+        :inner,
+        [t],
+        tt in subquery(TokenTransfer.where_any_address_fields_match(direction, address_hash, paging_options.page_size)),
+        t.hash == tt.transaction_hash
+      )
 
     from_address_query =
       base_query
