@@ -7,7 +7,6 @@ defmodule Explorer.Chain do
     only: [
       from: 2,
       join: 4,
-      join: 5,
       limit: 2,
       order_by: 2,
       order_by: 3,
@@ -203,14 +202,19 @@ defmodule Explorer.Chain do
       |> join_associations(necessity_by_association)
       |> Transaction.preload_token_transfers(address_hash)
 
+    transaction_hashes_from_token_transfers =
+      Repo.all(
+        TokenTransfer.where_any_address_fields_match(direction, address_hash, paging_options.page_size)
+      )
+      |> Enum.map(fn address_hash ->
+        {:ok, address_bytes} = Explorer.Chain.Hash.Full.dump(address_hash)
+
+        address_bytes
+      end)
+
     token_transfers_query =
       base_query
-      |> join(
-        :inner,
-        [t],
-        tt in subquery(TokenTransfer.where_any_address_fields_match(direction, address_hash, paging_options.page_size)),
-        t.hash == tt.transaction_hash
-      )
+      |> where([t], fragment("? in (?)", t.hash, ^transaction_hashes_from_token_transfers))
 
     from_address_query =
       base_query
