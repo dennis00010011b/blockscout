@@ -58,11 +58,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/indexer/config/dev/parity.exs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" column="50" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -108,6 +117,7 @@
         <option value="$PROJECT_DIR$/apps/explorer/config/prod/parity.exs" />
         <option value="$PROJECT_DIR$/apps/explorer/config/dev/parity.exs" />
         <option value="$PROJECT_DIR$/apps/block_scout_web/config/prod.exs" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -117,7 +127,9 @@
     <option name="width" value="933" />
     <option name="height" value="793" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -166,18 +178,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545039804279</updated>
-      <workItem from="1545039805514" duration="6808000" />
+      <workItem from="1545039805514" duration="7050000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6808000" />
+    <option name="totallyTimeSpent" value="7050000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="380" y="23" width="1094" height="793" extended-state="0" />
+    <frame x="507" y="40" width="933" height="793" extended-state="0" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22646785" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26644737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" />
       <window_info anchor="bottom" id="Version Control" />
@@ -295,6 +307,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="50" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
         </state>
       </provider>
     </entry>
