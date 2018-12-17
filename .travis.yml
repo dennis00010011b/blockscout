@@ -6,7 +6,8 @@ elixir:
   - 1.7.4
 node:
   - 10.14.2
-
+services:
+  - postgresql
 env:
   global:
 
@@ -15,10 +16,17 @@ cache:
 
 
 install:
-  - sudo apt-get install jq
-  - pip install awscli --upgrade --user
-  - aws --version
+  - cp apps/explorer/config/dev.secret.exs.example apps/explorer/config/dev.secret.exs
+  - cp apps/block_scout_web/config/dev.secret.exs.example apps/block_scout_web/config/dev.secret.exs
+  - mix do deps.get, local.rebar --force, deps.compile, compile
+  - mix ecto.create && mix ecto.migrate
+  - cd apps/block_scout_web/assets && npm install; cd -
+  - cd apps/explorer && npm install; cd -
+  - mix phx.server
 
 
+before_script:
+  - psql -c 'create database travis_ci_test;' -U postgres
 script:
+
 
