@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c03adce-e0cf-4578-8c89-f496ba90af53" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -60,11 +61,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" selection-start-column="7" selection-end-column="7" />
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-134">
+              <caret line="393" column="26" selection-start-line="393" selection-start-column="10" selection-end-line="393" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -93,6 +103,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>endpoint</find>
+      <find>docker</find>
+      <find>ETHEREUM_JSONRPC</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -135,6 +147,11 @@
               <item name="blockscout" type="b2602c69:ProjectViewProjectNode" />
               <item name="blockscout" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="blockscout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockscout" type="462c0819:PsiDirectoryNode" />
+              <item name=".circleci" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -171,23 +188,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545039804279</updated>
-      <workItem from="1545039805514" duration="8018000" />
+      <workItem from="1545039805514" duration="8865000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8018000" />
+    <option name="totallyTimeSpent" value="8865000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="445" y="23" width="979" height="793" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1868476" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1868476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.39675516" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.2020649" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -306,8 +323,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134">
+          <caret line="393" column="26" selection-start-line="393" selection-start-column="10" selection-end-line="393" selection-end-column="26" />
         </state>
       </provider>
     </entry>

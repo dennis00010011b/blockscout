@@ -1,35 +1,24 @@
-os: osx
 language: elixir
 sudo: false
 otp_release:
   - 21.0
 elixir:
   - 1.7.4
+node:
+  - 10.14.2
+
 env:
   global:
 
 cache:
   directories:
-    - _build
-    - deps
+
 
 install:
-  - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  - brew install --with-default-names awscli gnu-sed jq terraform
+  - sudo apt-get install jq
+  - pip install awscli --upgrade --user
+  - aws --version
+
+
 script:
-  - brew update
-deploy:
-  # https://docs.travis-ci.com/user/deployment/script/
-  # > `script` must be a scalar pointing to an executable file or command.
-  provider: script
-  # http://yaml.org/spec/1.2/spec.html#id2779048
-  # `>-` indicates the line folding.
-  script: >-
-    mix deps.get &&
-    mix hex.config username "$HEX_USERNAME" &&
-    (mix hex.config encrypted_key "$HEX_ENCRYPTED_KEY" > /dev/null 2>&1) &&
-    (echo "$HEX_PASSPHRASE"\\nY | mix hex.publish) &&
-    mix clean &&
-    mix deps.clean --all
-  on:
-    tags: true
+
