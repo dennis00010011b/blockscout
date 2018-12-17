@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="spandex_datadog" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/spandex_datadog/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/consolidated" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/spandex_datadog/lib" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="ex_rlp" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/ex_rlp/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/consolidated" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/ex_rlp/lib" />
+    </SOURCES>
+  </library>
+</component>

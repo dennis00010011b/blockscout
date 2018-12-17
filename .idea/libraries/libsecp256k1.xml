@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="libsecp256k1" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/libsecp256k1/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/consolidated" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/libsecp256k1/src" />
+      <root url="file://$PROJECT_DIR$/deps/libsecp256k1/priv" />
+      <root url="file://$PROJECT_DIR$/deps/libsecp256k1/c_src" />
+    </SOURCES>
+  </library>
+</component>

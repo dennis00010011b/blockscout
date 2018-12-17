@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="bypass" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/consolidated" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/bypass/lib" />
+    </SOURCES>
+  </library>
+</component>

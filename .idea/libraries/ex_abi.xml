@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="ex_abi" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/ex_abi/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/consolidated" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/ex_abi/lib" />
+      <root url="file://$PROJECT_DIR$/deps/ex_abi/src" />
+      <root url="file://$PROJECT_DIR$/deps/ex_abi/priv" />
+    </SOURCES>
+  </library>
+</component>

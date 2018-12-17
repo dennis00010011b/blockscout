@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="ex_cldr_units" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/ex_cldr_units/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/consolidated" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/ex_cldr_units/lib" />
+    </SOURCES>
+  </library>
+</component>

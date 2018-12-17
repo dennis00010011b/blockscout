@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="junit_formatter" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/consolidated" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/junit_formatter/lib" />
+    </SOURCES>
+  </library>
+</component>
