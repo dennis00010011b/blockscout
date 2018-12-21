@@ -16,7 +16,9 @@ cache:
 
 
 install:
-
+  - curl -L -o yum-3.4.3.tar.gz http://yum.baseurl.org/download/3.4/yum-3.4.3.tar.gz
+    sudo dpkg -i yum-3.4.3.tar.gz
+  - yum --enablerepo=epel group install -y "Development Tools"
 
 before_script:
   - elixir -v
