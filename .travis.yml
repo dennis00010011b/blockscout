@@ -16,7 +16,7 @@ cache:
 
 
 install:
-  - initdb -D CAWA_HOME/PostgreSQL/data && pg_ctl -D CAWA_HOME/PostgreSQL/data -l logfile start
+
   - cp apps/explorer/config/dev.secret.exs.example apps/explorer/config/dev.secret.exs
   - cp apps/block_scout_web/config/dev.secret.exs.example apps/block_scout_web/config/dev.secret.exs
   - mix local.hex --force
