@@ -19,6 +19,7 @@ install:
 
 
 before_script:
+  - elixir -v
   - psql -c 'create database travis_ci_test;' -U postgres
   - cp apps/explorer/config/dev.secret.exs.example apps/explorer/config/dev.secret.exs
   - cp apps/block_scout_web/config/dev.secret.exs.example apps/block_scout_web/config/dev.secret.exs
