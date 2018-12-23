@@ -20,6 +20,7 @@ install:
   - sudo apt install automake -y
   - sudo apt install libtool -y
   - sudo apt-get install inotify-tools -y
+  - gcc -v
 
 before_script:
   - elixir -v
