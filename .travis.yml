@@ -23,7 +23,7 @@ cache:
 
 
 install:
-  - initdb -D CAWA_HOME/PostgreSQL/data
+  #- initdb -D CAWA_HOME/PostgreSQL/data
   - sudo apt update
   - sudo apt install automake -y
   - sudo apt install libtool -y
