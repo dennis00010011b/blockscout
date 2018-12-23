@@ -8,8 +8,15 @@ node:
   - 10.14.2
 services:
   - postgresql
+addons:
+  postgresql: "10.3"
+  apt:
+    packages:
+      - postgresql-10
+      - postgresql-client-10
 env:
   global:
+    - PGPORT=5433
 
 cache:
   directories:
