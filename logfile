@@ -7,3 +7,11 @@
 2018-12-23 05:41:16.866 PST [2160] LOG:  database system is shut down
 /bin/sh: line 0: exec: PGPORT: not found
 /bin/sh: line 0: exec: PGPORT: not found
+/bin/sh: line 0: exec: PGPORT: not found
+2018-12-23 06:36:23.486 PST [2502] LOG:  could not bind IPv6 address "::1": Address already in use
+2018-12-23 06:36:23.486 PST [2502] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-12-23 06:36:23.487 PST [2502] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2018-12-23 06:36:23.487 PST [2502] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-12-23 06:36:23.487 PST [2502] WARNING:  could not create listen socket for "localhost"
+2018-12-23 06:36:23.487 PST [2502] FATAL:  could not create any TCP/IP sockets
+2018-12-23 06:36:23.487 PST [2502] LOG:  database system is shut down
