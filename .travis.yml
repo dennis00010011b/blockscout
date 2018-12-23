@@ -16,9 +16,12 @@ cache:
 
 
 install:
-  - curl -L -o yum-3.4.3.tar.gz http://yum.baseurl.org/download/3.4/yum-3.4.3.tar.gz
-    sudo dpkg -i yum-3.4.3.tar.gz
-  - yum --enablerepo=epel group install -y "Development Tools"
+  - sudo apt install yum
+  - wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -P /tmp
+  - yum install -y /tmp/epel-release-latest-7.noarch.rpm
+  - yum update -y
+  - yum upgrade -y --enablerepo=epel
+  - yum --enablerepo=epel group install -y "Development Tools" #Automake
 
 before_script:
   - elixir -v
