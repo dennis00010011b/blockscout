@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c03adce-e0cf-4578-8c89-f496ba90af53" name="Default Changelist" comment="" />
+    <list default="true" id="8c03adce-e0cf-4578-8c89-f496ba90af53" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -25,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+            <state relative-caret-position="219">
+              <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -167,17 +169,17 @@
       <updated>1545039804279</updated>
       <workItem from="1545039805514" duration="10225000" />
       <workItem from="1545389522219" duration="3760000" />
-      <workItem from="1545461914433" duration="11647000" />
+      <workItem from="1545461914433" duration="11806000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25632000" />
+    <option name="totallyTimeSpent" value="25791000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="209" y="23" width="991" height="793" extended-state="0" />
+    <frame x="209" y="23" width="1202" height="793" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27628866" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22692633" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -322,8 +324,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+        <state relative-caret-position="219">
+          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
         </state>
       </provider>
     </entry>
