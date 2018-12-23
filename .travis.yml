@@ -23,6 +23,7 @@ cache:
 
 
 install:
+  - initdb -D CAWA_HOME/PostgreSQL/data
   - sudo apt update
   - sudo apt install automake -y
   - sudo apt install libtool -y
@@ -32,15 +33,14 @@ install:
 
 before_script:
   - elixir -v
-
-  - initdb -D CAWA_HOME/PostgreSQL/data
- # - pg_ctl -p PGPORT -D CAWA_HOME/PostgreSQL/data -l logfile start
+  #- initdb -D CAWA_HOME/PostgreSQL/data
+  - pg_ctl -p PGPORT -D CAWA_HOME/PostgreSQL/data -l logfile start
   - cp apps/explorer/config/dev.secret.exs.example apps/explorer/config/dev.secret.exs
   - cp apps/block_scout_web/config/dev.secret.exs.example apps/block_scout_web/config/dev.secret.exs
   - mix local.hex --force
   - mix do deps.get, local.rebar --force, deps.compile, compile
- # - mix ecto.create
- # - mix ecto.migrate
+  - mix ecto.create
+  - mix ecto.migrate
   - cd apps/block_scout_web/assets && npm install; cd -
   - cd apps/explorer && npm install; cd -
   - mix phx.server
