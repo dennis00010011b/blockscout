@@ -18,12 +18,8 @@ cache:
 install:
   - uname -a
   - sudo apt update
-  - sudo apt install yum
-  - wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -P /tmp
-  - sudo yum install -y /tmp/epel-release-latest-7.noarch.rpm
-  - yum update -y
-  - yum upgrade -y --enablerepo=epel
-  - yum --enablerepo=epel group install -y "Development Tools" #Automake
+  - sudo apt install automake -y
+
 
 before_script:
   - elixir -v
