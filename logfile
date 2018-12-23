@@ -6,3 +6,4 @@
 2018-12-23 05:41:16.866 PST [2160] FATAL:  could not create any TCP/IP sockets
 2018-12-23 05:41:16.866 PST [2160] LOG:  database system is shut down
 /bin/sh: line 0: exec: PGPORT: not found
+/bin/sh: line 0: exec: PGPORT: not found
