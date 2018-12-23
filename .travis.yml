@@ -17,7 +17,6 @@ cache:
 
 install:
   - sudo apt update
-  - yum help
   - sudo apt install yum
   - wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -P /tmp
   - yum install -y /tmp/epel-release-latest-7.noarch.rpm
