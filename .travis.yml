@@ -19,7 +19,7 @@ install:
   - uname -a
   - sudo apt update
   - sudo apt install automake -y
-
+  - sudo apt install libtool-bin -y
 
 before_script:
   - elixir -v
