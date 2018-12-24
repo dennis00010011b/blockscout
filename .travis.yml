@@ -40,7 +40,7 @@ install:
   - sudo apt-get install -y libgmp-dev
 
 before_script:
-  - psql -c "CREATEROLE postgres1 WITH PASSWORD 'qwerty12345';"
+  - psql -c "CREATE ROLE postgres1 WITH PASSWORD 'qwerty12345';"
   - psql -c "\du;"
   #- psql -c "\l;"
   - service postgresql status
