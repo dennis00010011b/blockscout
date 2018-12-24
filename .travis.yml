@@ -43,12 +43,15 @@ before_script:
   #- psql -c "CREATE DATABASE testing_db;"
   - psql -c "ALTER USER postgres WITH PASSWORD 'qwerty12345';"
   - psql -c "\du;"
+  - psql -c "\l;"
   - service postgresql status
   - elixir -v
   - cp apps/explorer/config/dev.secret.exs.example apps/explorer/config/dev.secret.exs
   - cp apps/block_scout_web/config/dev.secret.exs.example apps/block_scout_web/config/dev.secret.exs
   - mix local.hex --force
   - mix do deps.get, local.rebar --force, deps.compile, compile
+  - psql -c "\du;"
+  - psql -c "\l;"
   - mix ecto.create
   - mix ecto.migrate
   - cd apps/block_scout_web/assets && npm install; cd -
