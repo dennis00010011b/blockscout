@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c03adce-e0cf-4578-8c89-f496ba90af53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-    </list>
+    <list default="true" id="8c03adce-e0cf-4578-8c89-f496ba90af53" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -28,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="45" column="17" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="45" selection-end-column="17" />
+            <state relative-caret-position="283">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
             </state>
           </provider>
         </entry>
@@ -197,12 +194,12 @@
       <updated>1545039804279</updated>
       <workItem from="1545039805514" duration="10225000" />
       <workItem from="1545389522219" duration="3760000" />
-      <workItem from="1545461914433" duration="21440000" />
+      <workItem from="1545461914433" duration="21840000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35425000" />
+    <option name="totallyTimeSpent" value="35825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="489" y="23" width="951" height="793" extended-state="0" />
@@ -367,8 +364,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="45" column="17" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="45" selection-end-column="17" />
+        <state relative-caret-position="283">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
