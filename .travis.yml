@@ -36,6 +36,7 @@ install:
   - psql -c "CREATE USER foo WITH PASSWORD 'bar';" -U postgres
   - service postgresql status
 
+
   - sudo apt update
   - sudo apt install automake -y
   - sudo apt install libtool -y
