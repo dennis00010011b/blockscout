@@ -23,7 +23,8 @@ cache:
 
 
 install:
-  - sudo initdb -D /usr/local/pgsql/data
+  - sudo initdb -D PostgreSQL/data
+  - pg_ctl -D PostgreSQL/data/ start
   - sudo apt update
   - sudo apt install automake -y
   - sudo apt install libtool -y
