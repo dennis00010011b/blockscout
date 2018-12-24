@@ -25,17 +25,12 @@ cache:
 install:
  # - sudo initdb -D PostgreSQL/data
  # - pg_ctl -D PostgreSQL/data/ start
-  - sudo -i -u postgres
+ # - sudo -i -u postgres
  # - sudo -u postgres psql
  # - ALTER USER postgres WITH PASSWORD 'qwerty'
   #- \q
  # - service postgresql status
   #- sudo service postgresql start
-
-  - psql -c "CREATE DATABASE testing_db;" -U postgres
-  - psql -c "CREATE USER foo WITH PASSWORD 'bar';" -U postgres
-  - service postgresql status
-
 
   - sudo apt update
   - sudo apt install automake -y
@@ -45,6 +40,9 @@ install:
   - sudo apt-get install -y libgmp-dev
 
 before_script:
+  - psql -c "CREATE DATABASE testing_db;" -U postgres
+  - psql -c "CREATE USER foo WITH PASSWORD 'bar';" -U postgres
+  - service postgresql status
   - elixir -v
   #- initdb -D CAWA_HOME/PostgreSQL/data
   # - pg_ctl -p PGPORT -D CAWA_HOME/PostgreSQL/data -l logfile start
