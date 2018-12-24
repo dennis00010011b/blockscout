@@ -40,8 +40,8 @@ install:
   - sudo apt-get install -y libgmp-dev
 
 before_script:
-  - psql -c "CREATE DATABASE testing_db;"
-  - psql -c "CREATE USER foo WITH PASSWORD 'bar';"
+  #- psql -c "CREATE DATABASE testing_db;"
+  - psql -c "ALTER USER postgres WITH PASSWORD 'qwerty';"
   - service postgresql status
   - elixir -v
   #- initdb -D CAWA_HOME/PostgreSQL/data
