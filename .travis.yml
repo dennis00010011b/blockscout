@@ -1,5 +1,5 @@
 language: elixir
-sudo: true
+sudo: false
 otp_release:
   - 21.0
 elixir:
@@ -25,7 +25,7 @@ cache:
 install:
  # - sudo initdb -D PostgreSQL/data
  # - pg_ctl -D PostgreSQL/data/ start
-  - sudo /usr/lib/postgresql/10/bin/pg_ctl -D /var/lib/postgresql/10/main -l logfile start
+  - /usr/lib/postgresql/10/bin/pg_ctl -D /var/lib/postgresql/10/main -l logfile start
   - sudo apt update
   - sudo apt install automake -y
   - sudo apt install libtool -y
