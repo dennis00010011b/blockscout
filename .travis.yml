@@ -50,6 +50,11 @@ before_script:
   - mix do deps.get, local.rebar --force, deps.compile, compile
   - psql -c "ALTER USER postgres WITH PASSWORD 'qwerty12345';"
   - sudo service postgresql restart
+
+  - cd /usr/lib/postgresql/10/
+  - ls
+  - cat pg_hba.conf
+
   - service postgresql status
   - psql -c "\du"
   - psql -c "\list"
