@@ -40,7 +40,6 @@ install:
   - sudo apt-get install -y libgmp-dev
 
 before_script:
-  - psql -c "ALTER USER travis WITH PASSWORD 'qwerty12345';"
   - psql -c "\du"
   - psql -c "\list"
   - service postgresql status
@@ -49,6 +48,7 @@ before_script:
   - cp apps/block_scout_web/config/dev.secret.exs.example apps/block_scout_web/config/dev.secret.exs
   - mix local.hex --force
   - mix do deps.get, local.rebar --force, deps.compile, compile
+  - psql -c "ALTER USER postgres WITH PASSWORD 'qwerty12345';"
   - psql -c "\du"
   - psql -c "\list"
   - mix ecto.create
