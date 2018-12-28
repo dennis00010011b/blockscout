@@ -49,6 +49,7 @@ before_script:
   - mix local.hex --force
   - mix do deps.get, local.rebar --force, deps.compile, compile
   - psql -c "ALTER USER postgres WITH PASSWORD 'qwerty12345';"
+  - psql -c "CREATE USER qlsklks WITH PASSWORD 'qwerty12345';"
   - psql -c "\du"
   - psql -c "\list"
   - mix ecto.create
