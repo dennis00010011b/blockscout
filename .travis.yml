@@ -53,7 +53,10 @@ before_script:
 
   - cd /usr/lib/postgresql/10/
   - ls
-  - cat pg_hba.conf
+  - cd bin && ls
+  - cd ..
+  - cd lib && ls
+ # - cat pg_hba.conf
 
   - service postgresql status
   - psql -c "\du"
