@@ -51,12 +51,8 @@ before_script:
   - psql -c "ALTER USER postgres WITH PASSWORD 'qwerty12345';"
   - sudo service postgresql restart
 
-  - cd /usr/lib/postgresql/10/
-  - ls
-  - cd bin && ls
-  - cd ..
-  - cd lib && ls
- # - cat pg_hba.conf
+  - cd /etc/postgresql/10/main
+  - cat pg_hba.conf
 
   - service postgresql status
   - psql -c "\du"
