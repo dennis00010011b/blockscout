@@ -51,7 +51,7 @@ before_script:
   - psql -c "ALTER USER postgres WITH PASSWORD 'qwerty12345';"
   - psql -c "\du"
   - psql -c "\list"
-  - sudo mix ecto.create
+  - mix ecto.create
   - mix ecto.migrate
   - cd apps/block_scout_web/assets && npm install; cd -
   - cd apps/explorer && npm install; cd -
