@@ -42,7 +42,7 @@ install:
 before_script:
   - psql -c "ALTER USER travis WITH PASSWORD 'qwerty12345';"
   - psql -c "\du;"
-  - psql -c "\ l;"
+  - psql -c "\l;"
   - service postgresql status
   - elixir -v
   - cp apps/explorer/config/dev.secret.exs.example apps/explorer/config/dev.secret.exs
